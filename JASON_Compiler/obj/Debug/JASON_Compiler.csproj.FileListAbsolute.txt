@@ -77,3 +77,15 @@ C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\De
 C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.CoreCompileInputs.cache
 C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.exe
 C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.pdb
+J:\college\tiny compiler\JASON_Compiler\bin\Debug\JASON_Compiler.exe.config
+J:\college\tiny compiler\JASON_Compiler\bin\Debug\JASON_Compiler.exe
+J:\college\tiny compiler\JASON_Compiler\bin\Debug\JASON_Compiler.pdb
+J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.AssemblyReference.cache
+J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.SuggestedBindingRedirects.cache
+J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.Form1.resources
+J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.Form2.resources
+J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.Properties.Resources.resources
+J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.GenerateResource.cache
+J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.CoreCompileInputs.cache
+J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.exe
+J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.pdb

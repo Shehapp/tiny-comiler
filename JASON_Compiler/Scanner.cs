@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 public enum Token_Class
 {
-    Begin, Call, Declare, End, Do, Else, EndIf, EndUntil, EndWhile, If, T_Int, T_String, T_Float,
+    Begin, Call, Declare, End, Do, Else,Repeat, EndIf, EndUntil, EndWhile, If, T_Int, T_String, T_Float,
     Parameters, Procedure, Program, Read, Real, Set, Then, Until, While, Write,
     Dot, Semicolon, Comma, LParanthesis, RParanthesis, EqualOp, LessThanOp,
     GreaterThanOp, NotEqualOp, PlusOp, MinusOp, MultiplyOp, DivideOp,
-    Idenifier, Constant , Int, Float, String
+    Idenifier, Constant , Int, Float, String,AssignOp, AndOp, OrOp
 }
 namespace JASON_Compiler
 {
@@ -54,6 +54,7 @@ namespace JASON_Compiler
             ReservedWords.Add("UNTIL", Token_Class.Until);
             ReservedWords.Add("WHILE", Token_Class.While);
             ReservedWords.Add("WRITE", Token_Class.Write);
+            ReservedWords.Add("REPEAT", Token_Class.Repeat);
 
             Operators.Add(".", Token_Class.Dot);
             Operators.Add(";", Token_Class.Semicolon);
@@ -61,6 +62,7 @@ namespace JASON_Compiler
             Operators.Add("(", Token_Class.LParanthesis);
             Operators.Add(")", Token_Class.RParanthesis);
             Operators.Add("=", Token_Class.EqualOp);
+            Operators.Add(":=", Token_Class.AssignOp);
             Operators.Add("<", Token_Class.LessThanOp);
             Operators.Add(">", Token_Class.GreaterThanOp);
             Operators.Add("!", Token_Class.NotEqualOp);
@@ -68,6 +70,8 @@ namespace JASON_Compiler
             Operators.Add("-", Token_Class.MinusOp);
             Operators.Add("*", Token_Class.MultiplyOp);
             Operators.Add("/", Token_Class.DivideOp);
+            Operators.Add("&&", Token_Class.AndOp);
+            Operators.Add("||", Token_Class.OrOp);
 
 
 
@@ -149,13 +153,29 @@ namespace JASON_Compiler
                     i=j;
                     FindTokenClass(CurrentLexeme);
                 }
-                else if(CurrentChar == '{')
+                else if(CurrentChar == '{' || CurrentChar =='}')
                 {
                     continue;
+                    
+                }
+                else if((i<SourceCode.Length-1 && CurrentChar ==':' && SourceCode[i+1]=='='))
+                {
+                    FindTokenClass(":=");
+                    i++;
+                }
+                else if((i<SourceCode.Length-1 && CurrentChar =='|' && SourceCode[i+1]=='|'))
+                {
+                    FindTokenClass("||");
+                    i++;
+                }
+                else if((i<SourceCode.Length-1 && CurrentChar =='&' && SourceCode[i+1]=='&'))
+                {
+                    FindTokenClass("&&");
+                    i++;
                 }
                 else
                 {
-                    FindTokenClass(CurrentChar.ToString());
+                    FindTokenClass(CurrentLexeme);
                 }
             }
             
@@ -163,6 +183,12 @@ namespace JASON_Compiler
         }
         void FindTokenClass(string Lex)
         {
+            // delete spaces from begining and end of the string
+            Lex = Lex.Trim();
+            if(Lex.Length==0)
+            {
+                return;
+            }
             Lex = Lex.ToUpper();
             Token Tok = new Token();
             Tok.lex = Lex;
