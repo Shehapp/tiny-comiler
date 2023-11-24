@@ -89,3 +89,15 @@ J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.Generate
 J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.CoreCompileInputs.cache
 J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.exe
 J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.pdb
+C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\bin\Debug\JASON_Compiler.exe.config
+C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\bin\Debug\JASON_Compiler.exe
+C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\bin\Debug\JASON_Compiler.pdb
+C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.AssemblyReference.cache
+C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.SuggestedBindingRedirects.cache
+C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.Form1.resources
+C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.Form2.resources
+C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.Properties.Resources.resources
+C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.GenerateResource.cache
+C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.CoreCompileInputs.cache
+C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.exe
+C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.pdb

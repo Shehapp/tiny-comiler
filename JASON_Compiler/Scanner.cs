@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 public enum Token_Class
 {
-    Begin, Call, Declare, End, Do, Else,Repeat, EndIf, EndUntil, EndWhile, If, T_Int, T_String, T_Float,
+    Begin, Call, Declare, End, Do, Else,Repeat, EndIf,ELSEIF, EndUntil, EndWhile, If, T_Int, T_String, T_Float,
     Parameters, Procedure, Program, Read, Real, Set, Then, Until, While, Write,
     Dot, Semicolon, Comma, LParanthesis, RParanthesis, EqualOp, LessThanOp,
     GreaterThanOp, NotEqualOp, PlusOp, MinusOp, MultiplyOp, DivideOp,
-    Idenifier, Constant , Int, Float, String,AssignOp, AndOp, OrOp
+    Idenifier, Constant , Int, Float, String,AssignOp, AndOp, OrOp , T_return ,T_endl
 }
 namespace JASON_Compiler
 {
@@ -31,30 +31,33 @@ namespace JASON_Compiler
 
         public Scanner()
         {
-            ReservedWords.Add("IF", Token_Class.If);
-            ReservedWords.Add("BEGIN", Token_Class.Begin);
-            ReservedWords.Add("CALL", Token_Class.Call);
-            ReservedWords.Add("DECLARE", Token_Class.Declare);
-            ReservedWords.Add("END", Token_Class.End);
-            ReservedWords.Add("DO", Token_Class.Do);
-            ReservedWords.Add("ELSE", Token_Class.Else);
-            ReservedWords.Add("ENDIF", Token_Class.EndIf);
-            ReservedWords.Add("ENDUNTIL", Token_Class.EndUntil);
-            ReservedWords.Add("ENDWHILE", Token_Class.EndWhile);
-            ReservedWords.Add("INT", Token_Class.T_Int);
-            ReservedWords.Add("STRING", Token_Class.T_String);
-            ReservedWords.Add("FLOAT", Token_Class.T_Float);
-            ReservedWords.Add("PARAMETERS", Token_Class.Parameters);
-            ReservedWords.Add("PROCEDURE", Token_Class.Procedure);
-            ReservedWords.Add("PROGRAM", Token_Class.Program);
-            ReservedWords.Add("READ", Token_Class.Read);
-            ReservedWords.Add("REAL", Token_Class.Real);
-            ReservedWords.Add("SET", Token_Class.Set);
-            ReservedWords.Add("THEN", Token_Class.Then);
-            ReservedWords.Add("UNTIL", Token_Class.Until);
-            ReservedWords.Add("WHILE", Token_Class.While);
-            ReservedWords.Add("WRITE", Token_Class.Write);
-            ReservedWords.Add("REPEAT", Token_Class.Repeat);
+            ReservedWords.Add("if", Token_Class.If);
+            ReservedWords.Add("begin", Token_Class.Begin);
+            ReservedWords.Add("call", Token_Class.Call);
+            ReservedWords.Add("declare", Token_Class.Declare);
+            ReservedWords.Add("end", Token_Class.End);
+            ReservedWords.Add("do", Token_Class.Do);
+            ReservedWords.Add("endl", Token_Class.T_endl);
+            ReservedWords.Add("else", Token_Class.Else);
+            ReservedWords.Add("elseif", Token_Class.ELSEIF);
+            ReservedWords.Add("endif", Token_Class.EndIf);
+            ReservedWords.Add("enduntil", Token_Class.EndUntil);
+            ReservedWords.Add("endwhile", Token_Class.EndWhile);
+            ReservedWords.Add("int", Token_Class.T_Int);
+            ReservedWords.Add("string", Token_Class.T_String);
+            ReservedWords.Add("float", Token_Class.T_Float);
+            ReservedWords.Add("parameters", Token_Class.Parameters);
+            ReservedWords.Add("procedure", Token_Class.Procedure);
+            ReservedWords.Add("program", Token_Class.Program);
+            ReservedWords.Add("read", Token_Class.Read);
+            ReservedWords.Add("real", Token_Class.Real);
+            ReservedWords.Add("set", Token_Class.Set);
+            ReservedWords.Add("then", Token_Class.Then);
+            ReservedWords.Add("until", Token_Class.Until);
+            ReservedWords.Add("while", Token_Class.While);
+            ReservedWords.Add("write", Token_Class.Write);
+            ReservedWords.Add("repeat", Token_Class.Repeat);
+            ReservedWords.Add("return", Token_Class.T_return);
 
             Operators.Add(".", Token_Class.Dot);
             Operators.Add(";", Token_Class.Semicolon);
@@ -189,7 +192,7 @@ namespace JASON_Compiler
             {
                 return;
             }
-            Lex = Lex.ToUpper();
+           // Lex = Lex.ToUpper();
             Token Tok = new Token();
             Tok.lex = Lex;
             Console.WriteLine(Lex);
