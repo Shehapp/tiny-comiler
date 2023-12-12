@@ -9,9 +9,9 @@ public enum Token_Class
 {
     Begin, Call, Declare, End, Do, Else,Repeat, EndIf,ELSEIF, EndUntil, EndWhile, If, T_Int, T_String, T_Float,
     Parameters, Procedure, Program, Read, Real, Set, Then, Until, While, Write,
-    Dot, Semicolon, Comma, LParanthesis, RParanthesis, EqualOp, LessThanOp,
+    Dot, Semicolon, Comma, LParanthesis, RParanthesis, RCurly, LCurly, EqualOp, LessThanOp,
     GreaterThanOp, NotEqualOp, PlusOp, MinusOp, MultiplyOp, DivideOp,
-    Idenifier, Constant , Int, Float, String,AssignOp, AndOp, OrOp , T_return ,T_endl
+    Idenifier, Constant , Int, Float, String,AssignOp, AndOp, OrOp , T_return ,T_endl,Main
 }
 namespace JASON_Compiler
 {
@@ -58,6 +58,7 @@ namespace JASON_Compiler
             ReservedWords.Add("write", Token_Class.Write);
             ReservedWords.Add("repeat", Token_Class.Repeat);
             ReservedWords.Add("return", Token_Class.T_return);
+            ReservedWords.Add("main", Token_Class.Main);
 
             Operators.Add(".", Token_Class.Dot);
             Operators.Add(";", Token_Class.Semicolon);
@@ -75,7 +76,8 @@ namespace JASON_Compiler
             Operators.Add("/", Token_Class.DivideOp);
             Operators.Add("&&", Token_Class.AndOp);
             Operators.Add("||", Token_Class.OrOp);
-
+            Operators.Add("{", Token_Class.LCurly);
+            Operators.Add("}", Token_Class.RCurly);
 
 
         }

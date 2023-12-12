@@ -18,86 +18,57 @@ C:\Users\Salma Khaled\Dropbox\Compilers 2017-2018\[2017-2018] JASON_Compiler\JAS
 C:\Users\Salma Khaled\Dropbox\Compilers 2017-2018\[2017-2018] JASON_Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.Form2.resources
 C:\Users\Salma Khaled\Dropbox\Compilers 2017-2018\[2017-2018] JASON_Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.Properties.Resources.resources
 C:\Users\Salma Khaled\Dropbox\Compilers 2017-2018\[2017-2018] JASON_Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.GenerateResource.Cache
-C:\Users\Salma Khaled\Dropbox\Compilers 2018-2019\Labs\Lab 4 - Scanning Part 2\[2017-2018] JASON_Compiler\JASON_Compiler\bin\Debug\JASON_Compiler.exe.config
-C:\Users\Salma Khaled\Dropbox\Compilers 2018-2019\Labs\Lab 4 - Scanning Part 2\[2017-2018] JASON_Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.exe
-C:\Users\Salma Khaled\Dropbox\Compilers 2018-2019\Labs\Lab 4 - Scanning Part 2\[2017-2018] JASON_Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.pdb
-C:\Users\Salma Khaled\Dropbox\Compilers 2018-2019\Labs\Lab 4 - Scanning Part 2\[2017-2018] JASON_Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csprojResolveAssemblyReference.cache
-C:\Users\Salma Khaled\Dropbox\Compilers 2018-2019\Labs\Lab 4 - Scanning Part 2\[2017-2018] JASON_Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.Form1.resources
-C:\Users\Salma Khaled\Dropbox\Compilers 2018-2019\Labs\Lab 4 - Scanning Part 2\[2017-2018] JASON_Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.Form2.resources
-C:\Users\Salma Khaled\Dropbox\Compilers 2018-2019\Labs\Lab 4 - Scanning Part 2\[2017-2018] JASON_Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.Properties.Resources.resources
-C:\Users\Salma Khaled\Dropbox\Compilers 2018-2019\Labs\Lab 4 - Scanning Part 2\[2017-2018] JASON_Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.GenerateResource.Cache
-C:\Users\Salma Khaled\Dropbox\Compilers 2018-2019\Labs\Lab 4 - Scanning Part 2\[2017-2018] JASON_Compiler\JASON_Compiler\bin\Debug\JASON_Compiler.exe
-C:\Users\Salma Khaled\Dropbox\Compilers 2018-2019\Labs\Lab 4 - Scanning Part 2\[2017-2018] JASON_Compiler\JASON_Compiler\bin\Debug\JASON_Compiler.pdb
-C:\Users\Salma Khaled\Dropbox\Compilers 2018-2019\Labs\Lab 3 - Scanning Part 2\[2017-2018] JASON_Compiler_Template\JASON_Compiler\bin\Debug\JASON_Compiler.exe.config
-C:\Users\Salma Khaled\Dropbox\Compilers 2018-2019\Labs\Lab 3 - Scanning Part 2\[2017-2018] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.exe
-C:\Users\Salma Khaled\Dropbox\Compilers 2018-2019\Labs\Lab 3 - Scanning Part 2\[2017-2018] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.pdb
-E:\Faculty\Compilers\2019-2020\Labs\Lab 3 - Scanning Part 2\[2017-2018] JASON_Compiler_Template\JASON_Compiler\bin\Debug\JASON_Compiler.exe.config
-E:\Faculty\Compilers\2019-2020\Labs\Lab 3 - Scanning Part 2\[2017-2018] JASON_Compiler_Template\JASON_Compiler\bin\Debug\JASON_Compiler.exe
-E:\Faculty\Compilers\2019-2020\Labs\Lab 3 - Scanning Part 2\[2017-2018] JASON_Compiler_Template\JASON_Compiler\bin\Debug\JASON_Compiler.pdb
-E:\Faculty\Compilers\2019-2020\Labs\Lab 3 - Scanning Part 2\[2017-2018] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.csprojAssemblyReference.cache
-E:\Faculty\Compilers\2019-2020\Labs\Lab 3 - Scanning Part 2\[2017-2018] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.Form1.resources
-E:\Faculty\Compilers\2019-2020\Labs\Lab 3 - Scanning Part 2\[2017-2018] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.Form2.resources
-E:\Faculty\Compilers\2019-2020\Labs\Lab 3 - Scanning Part 2\[2017-2018] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.Properties.Resources.resources
-E:\Faculty\Compilers\2019-2020\Labs\Lab 3 - Scanning Part 2\[2017-2018] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.GenerateResource.cache
-E:\Faculty\Compilers\2019-2020\Labs\Lab 3 - Scanning Part 2\[2017-2018] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.CoreCompileInputs.cache
-E:\Faculty\Compilers\2019-2020\Labs\Lab 3 - Scanning Part 2\[2017-2018] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.exe
-E:\Faculty\Compilers\2019-2020\Labs\Lab 3 - Scanning Part 2\[2017-2018] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.pdb
-G:\college\2021-2022\First Term\Compilers\Compliers\This Year\Labs\Lab 3\[2020-2021] JASON_Compiler_Template\[2020-2021] JASON_Compiler_Template\[2017-2018] JASON_Compiler_Template\JASON_Compiler\bin\Debug\JASON_Compiler.exe.config
-G:\college\2021-2022\First Term\Compilers\Compliers\This Year\Labs\Lab 3\[2020-2021] JASON_Compiler_Template\[2020-2021] JASON_Compiler_Template\[2017-2018] JASON_Compiler_Template\JASON_Compiler\bin\Debug\JASON_Compiler.exe
-G:\college\2021-2022\First Term\Compilers\Compliers\This Year\Labs\Lab 3\[2020-2021] JASON_Compiler_Template\[2020-2021] JASON_Compiler_Template\[2017-2018] JASON_Compiler_Template\JASON_Compiler\bin\Debug\JASON_Compiler.pdb
-G:\college\2021-2022\First Term\Compilers\Compliers\This Year\Labs\Lab 3\[2020-2021] JASON_Compiler_Template\[2020-2021] JASON_Compiler_Template\[2017-2018] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.csprojAssemblyReference.cache
-G:\college\2021-2022\First Term\Compilers\Compliers\This Year\Labs\Lab 3\[2020-2021] JASON_Compiler_Template\[2020-2021] JASON_Compiler_Template\[2017-2018] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.Form1.resources
-G:\college\2021-2022\First Term\Compilers\Compliers\This Year\Labs\Lab 3\[2020-2021] JASON_Compiler_Template\[2020-2021] JASON_Compiler_Template\[2017-2018] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.Form2.resources
-G:\college\2021-2022\First Term\Compilers\Compliers\This Year\Labs\Lab 3\[2020-2021] JASON_Compiler_Template\[2020-2021] JASON_Compiler_Template\[2017-2018] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.Properties.Resources.resources
-G:\college\2021-2022\First Term\Compilers\Compliers\This Year\Labs\Lab 3\[2020-2021] JASON_Compiler_Template\[2020-2021] JASON_Compiler_Template\[2017-2018] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.GenerateResource.cache
-G:\college\2021-2022\First Term\Compilers\Compliers\This Year\Labs\Lab 3\[2020-2021] JASON_Compiler_Template\[2020-2021] JASON_Compiler_Template\[2017-2018] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.CoreCompileInputs.cache
-G:\college\2021-2022\First Term\Compilers\Compliers\This Year\Labs\Lab 3\[2020-2021] JASON_Compiler_Template\[2020-2021] JASON_Compiler_Template\[2017-2018] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.exe
-G:\college\2021-2022\First Term\Compilers\Compliers\This Year\Labs\Lab 3\[2020-2021] JASON_Compiler_Template\[2020-2021] JASON_Compiler_Template\[2017-2018] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.pdb
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.AssemblyReference.cache
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.SuggestedBindingRedirects.cache
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.Form1.resources
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.Form2.resources
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.Properties.Resources.resources
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.GenerateResource.cache
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.CoreCompileInputs.cache
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.exe
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.pdb
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\[2021-2022] JASON_Compiler_Template\JASON_Compiler\bin\Debug\JASON_Compiler.exe.config
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\[2021-2022] JASON_Compiler_Template\JASON_Compiler\bin\Debug\JASON_Compiler.exe
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\[2021-2022] JASON_Compiler_Template\JASON_Compiler\bin\Debug\JASON_Compiler.pdb
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\JASON_Compiler\bin\Debug\JASON_Compiler.exe.config
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\JASON_Compiler\bin\Debug\JASON_Compiler.exe
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\JASON_Compiler\bin\Debug\JASON_Compiler.pdb
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.AssemblyReference.cache
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.SuggestedBindingRedirects.cache
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.Form1.resources
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.Form2.resources
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.Properties.Resources.resources
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.GenerateResource.cache
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.CoreCompileInputs.cache
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.exe
-C:\Users\sheha\Desktop\[2021-2022] JASON_Compiler_Template\JASON_Compiler\obj\Debug\JASON_Compiler.pdb
-J:\college\tiny compiler\JASON_Compiler\bin\Debug\JASON_Compiler.exe.config
-J:\college\tiny compiler\JASON_Compiler\bin\Debug\JASON_Compiler.exe
-J:\college\tiny compiler\JASON_Compiler\bin\Debug\JASON_Compiler.pdb
-J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.AssemblyReference.cache
-J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.SuggestedBindingRedirects.cache
-J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.Form1.resources
-J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.Form2.resources
-J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.Properties.Resources.resources
-J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.GenerateResource.cache
-J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.CoreCompileInputs.cache
-J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.exe
-J:\college\tiny compiler\JASON_Compiler\obj\Debug\JASON_Compiler.pdb
-C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\bin\Debug\JASON_Compiler.exe.config
-C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\bin\Debug\JASON_Compiler.exe
-C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\bin\Debug\JASON_Compiler.pdb
-C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.AssemblyReference.cache
-C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.SuggestedBindingRedirects.cache
-C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.Form1.resources
-C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.Form2.resources
-C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.Properties.Resources.resources
-C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.GenerateResource.cache
-C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.CoreCompileInputs.cache
-C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.exe
-C:\Users\tarek\TINY COMPILER\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.pdb
+C:\Users\hp\Desktop\[2017-2018] JASON_Compiler\JASON_Compiler\bin\Debug\JASON_Compiler.exe.config
+C:\Users\hp\Desktop\[2017-2018] JASON_Compiler\JASON_Compiler\bin\Debug\JASON_Compiler.exe
+C:\Users\hp\Desktop\[2017-2018] JASON_Compiler\JASON_Compiler\bin\Debug\JASON_Compiler.pdb
+C:\Users\hp\Desktop\[2017-2018] JASON_Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.Form1.resources
+C:\Users\hp\Desktop\[2017-2018] JASON_Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.Form2.resources
+C:\Users\hp\Desktop\[2017-2018] JASON_Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.Properties.Resources.resources
+C:\Users\hp\Desktop\[2017-2018] JASON_Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.GenerateResource.cache
+C:\Users\hp\Desktop\[2017-2018] JASON_Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\[2017-2018] JASON_Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.exe
+C:\Users\hp\Desktop\[2017-2018] JASON_Compiler\JASON_Compiler\obj\Debug\JASON_Compiler.pdb
+C:\Users\hp\Desktop\Parser-Template\JASON_Compiler\bin\Debug\JASON_Compiler.exe.config
+C:\Users\hp\Desktop\Parser-Template\JASON_Compiler\bin\Debug\JASON_Compiler.exe
+C:\Users\hp\Desktop\Parser-Template\JASON_Compiler\bin\Debug\JASON_Compiler.pdb
+C:\Users\hp\Desktop\Parser-Template\JASON_Compiler\obj\Debug\JASON_Compiler.csprojAssemblyReference.cache
+C:\Users\hp\Desktop\Parser-Template\JASON_Compiler\obj\Debug\JASON_Compiler.Form1.resources
+C:\Users\hp\Desktop\Parser-Template\JASON_Compiler\obj\Debug\JASON_Compiler.Form2.resources
+C:\Users\hp\Desktop\Parser-Template\JASON_Compiler\obj\Debug\JASON_Compiler.Properties.Resources.resources
+C:\Users\hp\Desktop\Parser-Template\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.GenerateResource.cache
+C:\Users\hp\Desktop\Parser-Template\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.CoreCompileInputs.cache
+C:\Users\hp\Desktop\Parser-Template\JASON_Compiler\obj\Debug\JASON_Compiler.exe
+C:\Users\hp\Desktop\Parser-Template\JASON_Compiler\obj\Debug\JASON_Compiler.pdb
+G:\college\2021-2022\First Term\Compilers\Labs\Lab7-Last Version\Parser-Template - Studs Versions\JASON_Compiler\bin\Debug\JASON_Compiler.exe.config
+G:\college\2021-2022\First Term\Compilers\Labs\Lab7-Last Version\Parser-Template - Studs Versions\JASON_Compiler\bin\Debug\JASON_Compiler.exe
+G:\college\2021-2022\First Term\Compilers\Labs\Lab7-Last Version\Parser-Template - Studs Versions\JASON_Compiler\bin\Debug\JASON_Compiler.pdb
+G:\college\2021-2022\First Term\Compilers\Labs\Lab7-Last Version\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.csprojAssemblyReference.cache
+G:\college\2021-2022\First Term\Compilers\Labs\Lab7-Last Version\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.Form1.resources
+G:\college\2021-2022\First Term\Compilers\Labs\Lab7-Last Version\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.Form2.resources
+G:\college\2021-2022\First Term\Compilers\Labs\Lab7-Last Version\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.Properties.Resources.resources
+G:\college\2021-2022\First Term\Compilers\Labs\Lab7-Last Version\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.GenerateResource.cache
+G:\college\2021-2022\First Term\Compilers\Labs\Lab7-Last Version\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.CoreCompileInputs.cache
+G:\college\2021-2022\First Term\Compilers\Labs\Lab7-Last Version\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.exe
+G:\college\2021-2022\First Term\Compilers\Labs\Lab7-Last Version\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.pdb
+C:\Users\Mirna\OneDrive\Desktop\Compiler\Lab 7\Parser-Template - Studs Versions\JASON_Compiler\bin\Debug\JASON_Compiler.exe.config
+C:\Users\Mirna\OneDrive\Desktop\Compiler\Lab 7\Parser-Template - Studs Versions\JASON_Compiler\bin\Debug\JASON_Compiler.exe
+C:\Users\Mirna\OneDrive\Desktop\Compiler\Lab 7\Parser-Template - Studs Versions\JASON_Compiler\bin\Debug\JASON_Compiler.pdb
+C:\Users\Mirna\OneDrive\Desktop\Compiler\Lab 7\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.AssemblyReference.cache
+C:\Users\Mirna\OneDrive\Desktop\Compiler\Lab 7\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.Form1.resources
+C:\Users\Mirna\OneDrive\Desktop\Compiler\Lab 7\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.Form2.resources
+C:\Users\Mirna\OneDrive\Desktop\Compiler\Lab 7\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.Properties.Resources.resources
+C:\Users\Mirna\OneDrive\Desktop\Compiler\Lab 7\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.GenerateResource.cache
+C:\Users\Mirna\OneDrive\Desktop\Compiler\Lab 7\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.CoreCompileInputs.cache
+C:\Users\Mirna\OneDrive\Desktop\Compiler\Lab 7\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.exe
+C:\Users\Mirna\OneDrive\Desktop\Compiler\Lab 7\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.pdb
+C:\Users\NEW TOP\Documents\[2021-2022] JASON_Compiler_Template\Parser-Template - Studs Versions\Parser-Template - Studs Versions\JASON_Compiler\bin\Debug\JASON_Compiler.exe.config
+C:\Users\NEW TOP\Documents\[2021-2022] JASON_Compiler_Template\Parser-Template - Studs Versions\Parser-Template - Studs Versions\JASON_Compiler\bin\Debug\JASON_Compiler.exe
+C:\Users\NEW TOP\Documents\[2021-2022] JASON_Compiler_Template\Parser-Template - Studs Versions\Parser-Template - Studs Versions\JASON_Compiler\bin\Debug\JASON_Compiler.pdb
+C:\Users\NEW TOP\Documents\[2021-2022] JASON_Compiler_Template\Parser-Template - Studs Versions\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.AssemblyReference.cache
+C:\Users\NEW TOP\Documents\[2021-2022] JASON_Compiler_Template\Parser-Template - Studs Versions\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.Form1.resources
+C:\Users\NEW TOP\Documents\[2021-2022] JASON_Compiler_Template\Parser-Template - Studs Versions\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.Form2.resources
+C:\Users\NEW TOP\Documents\[2021-2022] JASON_Compiler_Template\Parser-Template - Studs Versions\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.Properties.Resources.resources
+C:\Users\NEW TOP\Documents\[2021-2022] JASON_Compiler_Template\Parser-Template - Studs Versions\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.GenerateResource.cache
+C:\Users\NEW TOP\Documents\[2021-2022] JASON_Compiler_Template\Parser-Template - Studs Versions\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.CoreCompileInputs.cache
+C:\Users\NEW TOP\Documents\[2021-2022] JASON_Compiler_Template\Parser-Template - Studs Versions\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.exe
+C:\Users\NEW TOP\Documents\[2021-2022] JASON_Compiler_Template\Parser-Template - Studs Versions\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.pdb
