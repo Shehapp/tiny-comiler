@@ -457,7 +457,7 @@ namespace JASON_Compiler
 
             if (TokenStream[InputPointer].token_type == Token_Class.Idenifier)
             {
-                ids.Children.Add(match(Token_Class.Idenifier));
+                ids_.Children.Add(match(Token_Class.Idenifier));
                 ids_.Children.Add(IdListDash());
                 return ids_;
             }
@@ -815,21 +815,21 @@ namespace JASON_Compiler
 
             if (statementTemp != null)
             {
-                ifst.Children.Add(statementTemp);
+                elsifst.Children.Add(statementTemp);
                 if (TokenStream[InputPointer].token_type == Token_Class.Else)
                 {
-                    ifst.Children.Add(ElseStmt());
-                    return ifst;
+                    elsifst.Children.Add(ElseStmt());
+                    return elsifst;
                 }
                 else if (TokenStream[InputPointer].token_type == Token_Class.ELSEIF)
                 {
-                    ifst.Children.Add(ElseIfStmt());
-                    return ifst;
+                    elsifst.Children.Add(ElseIfStmt());
+                    return elsifst;
                 }
                 else if (TokenStream[InputPointer].token_type == Token_Class.End)
                 {
-                    ifst.Children.Add(match(Token_Class.End));
-                    return ifst;
+                    elsifst.Children.Add(match(Token_Class.End));
+                    return elsifst;
                 }
                 Errors.Parser_Error_List.Add("Invalid If statement");
                 return null;
