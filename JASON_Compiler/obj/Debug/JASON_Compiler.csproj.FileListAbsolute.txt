@@ -72,3 +72,14 @@ C:\Users\NEW TOP\Documents\[2021-2022] JASON_Compiler_Template\Parser-Template -
 C:\Users\NEW TOP\Documents\[2021-2022] JASON_Compiler_Template\Parser-Template - Studs Versions\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.CoreCompileInputs.cache
 C:\Users\NEW TOP\Documents\[2021-2022] JASON_Compiler_Template\Parser-Template - Studs Versions\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.exe
 C:\Users\NEW TOP\Documents\[2021-2022] JASON_Compiler_Template\Parser-Template - Studs Versions\Parser-Template - Studs Versions\JASON_Compiler\obj\Debug\JASON_Compiler.pdb
+C:\Users\NEW TOP\Documents\Compiler Project\tiny-comiler\JASON_Compiler\bin\Debug\JASON_Compiler.exe.config
+C:\Users\NEW TOP\Documents\Compiler Project\tiny-comiler\JASON_Compiler\bin\Debug\JASON_Compiler.exe
+C:\Users\NEW TOP\Documents\Compiler Project\tiny-comiler\JASON_Compiler\bin\Debug\JASON_Compiler.pdb
+C:\Users\NEW TOP\Documents\Compiler Project\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.AssemblyReference.cache
+C:\Users\NEW TOP\Documents\Compiler Project\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.Form1.resources
+C:\Users\NEW TOP\Documents\Compiler Project\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.Form2.resources
+C:\Users\NEW TOP\Documents\Compiler Project\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.Properties.Resources.resources
+C:\Users\NEW TOP\Documents\Compiler Project\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.GenerateResource.cache
+C:\Users\NEW TOP\Documents\Compiler Project\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.csproj.CoreCompileInputs.cache
+C:\Users\NEW TOP\Documents\Compiler Project\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.exe
+C:\Users\NEW TOP\Documents\Compiler Project\tiny-comiler\JASON_Compiler\obj\Debug\JASON_Compiler.pdb
