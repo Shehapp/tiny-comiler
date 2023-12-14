@@ -27,6 +27,7 @@ namespace JASON_Compiler
         {
             this.InputPointer = 0;
             this.TokenStream = TokenStream;
+            Console.WriteLine(TokenStream.Count);
             root = new Node("root");
             root.Children.Add(Program());
             return root;
@@ -37,6 +38,7 @@ namespace JASON_Compiler
 
             if (InputPointer >= TokenStream.Count)
             {
+               
                 return null;
             }
 
@@ -70,6 +72,12 @@ namespace JASON_Compiler
             if (mainFuncHeader != null)
             {
                 mainFunc.Children.Add(mainFuncHeader);
+                Console.WriteLine("function_body");
+
+               // Node mainbody = FunctionBody();
+               /* Console.WriteLine("hna");
+                mainbody.Children.ForEach(x => Console.WriteLine(x.Name));
+                Console.WriteLine("hna");*/
                 mainFunc.Children.Add(FunctionBody());
                 return mainFunc;
             }
@@ -82,7 +90,7 @@ namespace JASON_Compiler
             Node functionHeader = FunctionHeader();
             if (functionHeader != null)
             {
-                functionDecl.Children.Add(functionHeader);
+                functionDecl.Children.Add(functionHeader);   
                 functionDecl.Children.Add(FunctionBody());
                 return functionDecl;
             }
@@ -132,6 +140,7 @@ namespace JASON_Compiler
         }
         private Node DatatypeF()
         {
+
             Node Datatype = new Node("Return type");
             if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.T_Int)
             {
@@ -308,10 +317,13 @@ namespace JASON_Compiler
 
             if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.LCurly)
             {
+                Console.WriteLine("in body");
                 funcBody.Children.Add(match(Token_Class.LCurly));
                 Node statementsNode = Statements();
                 if (statementsNode != null)
                 {
+
+                    Console.WriteLine("in statement");
                     funcBody.Children.Add(statementsNode);
                     Node returnNode = ReturnStmt();
                     if (returnNode != null)
@@ -355,8 +367,9 @@ namespace JASON_Compiler
         private Node Statements()
         {
             Node statements = new Node("Statements");
-
+            Console.WriteLine("statements");
             Node statementNode = Statement();
+
             if (statementNode != null)
             {
                 statements.Children.Add(statementNode);
@@ -409,7 +422,7 @@ namespace JASON_Compiler
             return statmenets;*/
 
             Node statement = new Node("Statement");
-
+            Console.WriteLine("in statement");
             if (InputPointer >= TokenStream.Count)
             {
                 return null; // Return null if we've reached the end of the TokenStream
@@ -420,22 +433,27 @@ namespace JASON_Compiler
             if (currentToken.token_type == Token_Class.Idenifier &&
                 (InputPointer + 1 < TokenStream.Count && TokenStream[InputPointer + 1].token_type == Token_Class.AssignOp))
             {
+                Console.WriteLine("in assstatement");
                 statement.Children.Add(AssignStmt());
             }
             else if (IsDataType(currentToken))
             {
+                Console.WriteLine("in decstatement");
                 statement.Children.Add(DeclStmt());
             }
             else if (currentToken.token_type == Token_Class.Write)
             {
+                Console.WriteLine("in writestatement");
                 statement.Children.Add(WriteStmt());
             }
             else if (currentToken.token_type == Token_Class.Read)
             {
+                Console.WriteLine("in readstatement");
                 statement.Children.Add(ReadStmt());
             }
             else if (currentToken.token_type == Token_Class.If)
             {
+                Console.WriteLine("in ifstatement");
                 statement.Children.Add(IfStmt());
             }
             else if (currentToken.token_type == Token_Class.Repeat)
@@ -489,7 +507,8 @@ namespace JASON_Compiler
                 return null;
             }
 
-            return null;
+            Node eps = new Node("epsilon");
+            return eps;
         }
 
         private Node AssignStmt()
@@ -507,12 +526,27 @@ namespace JASON_Compiler
             return assignment;
 
         }
+        private Node AssignR()
+        {
+            Node assignment = new Node("Assignment R");
+
+            if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.AssignOp)
+            {
+                //assignment.Children.Add(match(Token_Class.Idenifier));
+                assignment.Children.Add(match(Token_Class.AssignOp));
+            }
+            assignment.Children.Add(Expression());// <---- NOT IMPLEMENTED YET
+            //assignment.Children.Add(semicolon());
+
+            return assignment;
+
+        }
         private Node DeclStmt()
         {
             Node declaration = new Node("Declaration Statement");
             declaration.Children.Add(Datatype());
             declaration.Children.Add(IdList());
-            declaration.Children.Add(AssignsList());
+            declaration.Children.Add(AssignR());
             declaration.Children.Add(semicolon());
 
             return declaration;
@@ -580,24 +614,29 @@ namespace JASON_Compiler
         private Node Expression()
         {
             Node Exp = new Node("Expression");
+            Console.WriteLine("in expression");
 
-            if(InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.T_String)
+
+            if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.T_String)
             {
                 Exp.Children.Add(match(Token_Class.T_String));
                 return Exp;
             }
-            else if(InputPointer < TokenStream.Count && 
-                (TokenStream[InputPointer].token_type == Token_Class.Constant ||
-                TokenStream[InputPointer].token_type == Token_Class.Idenifier))
-            {
-                Exp.Children.Add(Term());
-                return Exp;
-            }
+
             Node temp = Equation();
-            if(temp != null)
+            if (temp != null)
             {
                 Exp.Children.Add(temp);
                 return Exp;
+            }
+            else if (InputPointer < TokenStream.Count &&
+                (TokenStream[InputPointer].token_type == Token_Class.Constant ||
+                TokenStream[InputPointer].token_type == Token_Class.Idenifier))
+            {
+                Console.WriteLine("is_id");
+                Exp.Children.Add(Term());
+                return Exp;
+
             }
             Errors.Parser_Error_List.Add("Invalid Expression");
             return null;
@@ -611,12 +650,17 @@ namespace JASON_Compiler
                 terms.Children.Add(match(Token_Class.Constant));
 
             else if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.Idenifier &&
-                (InputPointer+1 < TokenStream.Count &&
+                (InputPointer + 1 < TokenStream.Count &&
                 TokenStream[InputPointer].token_type == Token_Class.LParanthesis))
                 terms.Children.Add(FuncCall());
 
-            else if(InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.Idenifier)
+            else if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.Idenifier) {
+
+                Console.WriteLine("is_idnt term");
                 terms.Children.Add(match(Token_Class.Idenifier));
+            
+            }
+               
 
             return terms;
         }
@@ -625,13 +669,6 @@ namespace JASON_Compiler
         {
             Node equation = new Node("Equation");
 
-            if (InputPointer < TokenStream.Count &&
-                (TokenStream[InputPointer].token_type == Token_Class.Constant ||
-                 TokenStream[InputPointer].token_type == Token_Class.Idenifier))
-            {
-                equation.Children.Add(Term());
-                return equation;
-            }
 
             Node subEquation = SubEquation();
             if (subEquation != null)
@@ -641,6 +678,16 @@ namespace JASON_Compiler
                 equation.Children.Add(Term());
                 return equation;
             }
+
+            if (InputPointer < TokenStream.Count &&
+                (TokenStream[InputPointer].token_type == Token_Class.Constant ||
+                 TokenStream[InputPointer].token_type == Token_Class.Idenifier))
+            {
+                equation.Children.Add(Term());
+                return equation;
+            }
+
+           
 
             Errors.Parser_Error_List.Add("Invalid Equation");
             return null;
@@ -717,10 +764,12 @@ namespace JASON_Compiler
             Node writeStatement = new Node("Write Statement");
             if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.Write)
             {
+                Console.WriteLine("in write");
                 writeStatement.Children.Add(match(Token_Class.Write));
 
                 if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.T_endl)
                 {
+                    Console.WriteLine("is write");
                     writeStatement.Children.Add(match(Token_Class.T_endl));
                     writeStatement.Children.Add(semicolon());
                     return writeStatement;
@@ -729,8 +778,11 @@ namespace JASON_Compiler
                 Node temp = Expression();
                 if (temp != null)
                 {
+                    Console.WriteLine("is write");
                     writeStatement.Children.Add(temp);
                     writeStatement.Children.Add(semicolon());
+
+                    Console.WriteLine("END write");
                     return writeStatement;
                 }
 

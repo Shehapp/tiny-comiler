@@ -17,8 +17,10 @@ namespace JASON_Compiler
         {
             //Scanner
             Jason_Scanner.StartScanning(SourceCode);
+           
+            
             //Parser
-            Jason_Parser.StartParsing(TokenStream);
+            Jason_Parser.StartParsing(Jason_Scanner.Tokens);
             treeroot = Jason_Parser.root;
         } 
     }
