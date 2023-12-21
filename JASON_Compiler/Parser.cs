@@ -45,6 +45,7 @@ namespace JASON_Compiler
             Node functionDecl = FunctionDecl();
             if (functionDecl != null)
             {
+                Console.WriteLine("IM NOT NULL");
                 program.Children.Add(functionDecl);
                 Node mainFunc = MainFunction();
                 if (mainFunc != null)
@@ -90,6 +91,8 @@ namespace JASON_Compiler
             Node functionHeader = FunctionHeader();
             if (functionHeader != null)
             {
+                Console.WriteLine("IM NOT NULL");
+
                 functionDecl.Children.Add(functionHeader);   
                 functionDecl.Children.Add(FunctionBody());
                 return functionDecl;
@@ -130,10 +133,20 @@ namespace JASON_Compiler
             Node Function_Header = new Node("Function Header");
 
             Function_Header.Children.Add(DatatypeF());
+            Console.WriteLine("i failed here 1");
+
             Function_Header.Children.Add(FunctionName());
+            Console.WriteLine("i failed here 2");
+
             Function_Header.Children.Add(L_parenthesis());
+            Console.WriteLine("i failed here 3");
+
             Function_Header.Children.Add(Params());
+            Console.WriteLine("i failed here 4");
+
             Function_Header.Children.Add(R_parenthesis());
+            Console.WriteLine("i failed here 5");
+
 
             return Function_Header;
 
@@ -333,7 +346,10 @@ namespace JASON_Compiler
                         return funcBody;
                     }
                     Errors.Parser_Error_List.Add("Missing Return Statement");
-                    return null;
+                    Node eps = new Node("epsilon");
+                    funcBody.Children.Add(eps);
+                    funcBody.Children.Add(match(Token_Class.RCurly));
+                    return funcBody;
                 }
                 Errors.Parser_Error_List.Add("Invalid Statements");
                 return null;
