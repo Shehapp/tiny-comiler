@@ -688,9 +688,7 @@ namespace JASON_Compiler
             if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.Constant)
                 terms.Children.Add(match(Token_Class.Constant));
 
-            else if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.Idenifier &&
-                (InputPointer + 1 < TokenStream.Count &&
-                TokenStream[InputPointer].token_type == Token_Class.LParanthesis))
+            else if ((InputPointer < TokenStream.Count) && (TokenStream[InputPointer].token_type == Token_Class.Idenifier) &&    (InputPointer + 1 < TokenStream.Count) &&TokenStream[InputPointer+1].token_type == Token_Class.LParanthesis)
                 terms.Children.Add(FuncCall());
 
             else if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.Idenifier) {
@@ -707,8 +705,57 @@ namespace JASON_Compiler
         private Node Equation()
         {
             Node equation = new Node("Equation");
+            
+            if (InputPointer < TokenStream.Count &&
+               InputPointer + 1 < TokenStream.Count && (TokenStream[InputPointer].token_type == Token_Class.Constant || TokenStream[InputPointer].token_type == Token_Class.Idenifier)
+                          && (TokenStream[InputPointer + 1].token_type == Token_Class.PlusOp ||
+                     TokenStream[InputPointer + 1].token_type == Token_Class.MinusOp ||
+                          TokenStream[InputPointer + 1].token_type == Token_Class.MultiplyOp ||
+                         (TokenStream[InputPointer + 1].token_type == Token_Class.DivideOp)))
+            {
+
+                equation.Children.Add(Term());
+                equation.Children.Add(arithOP());
+                equation.Children.Add(Equation());
+                return equation;
+            }
 
 
+            if (InputPointer < TokenStream.Count  && (TokenStream[InputPointer].token_type == Token_Class.Constant || TokenStream[InputPointer].token_type == Token_Class.Idenifier))
+            {
+                equation.Children.Add(Term());
+                return equation;
+            }
+
+            if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.LParanthesis)
+            {
+                equation.Children.Add(L_parenthesis());
+                Node innerEquation = Equation();
+                if (innerEquation != null)
+                {
+                    equation.Children.Add(innerEquation);
+                    equation.Children.Add(R_parenthesis());
+
+                    
+                    if (InputPointer < TokenStream.Count && (TokenStream[InputPointer].token_type == Token_Class.PlusOp ||
+                     TokenStream[InputPointer].token_type == Token_Class.MinusOp ||
+                          TokenStream[InputPointer].token_type == Token_Class.MultiplyOp ||
+                         (TokenStream[InputPointer].token_type == Token_Class.DivideOp)))
+                    {
+
+                        equation.Children.Add(arithOP());
+                        equation.Children.Add(Equation());
+                    }
+                    return equation;
+                }
+            }
+            else
+            {
+
+                return null;
+            }
+          
+/*
             Node subEquation = SubEquation();
             if (subEquation != null)
             {
@@ -726,7 +773,7 @@ namespace JASON_Compiler
                 return equation;
             }
 
-           
+  */         
 
             Errors.Parser_Error_List.Add("Invalid Equation");
             return null;
@@ -847,6 +894,68 @@ namespace JASON_Compiler
             return null;
         }
 
+        private Node Paramscall()
+        {
+            Node Parameters = new Node("Parameters");
+            Node temp = Paramcall();
+            if (temp != null)
+            {
+                Parameters.Children.Add(temp);
+                Parameters.Children.Add(ParamsDashcall());
+
+                return Parameters;
+            }
+
+            return null;
+        }
+
+        private Node Paramcall()
+        {
+            Node Parameter = new Node("Parameter");
+       
+
+                Console.WriteLine(TokenStream[InputPointer].token_type);
+                if (InputPointer <= TokenStream.Count &&( TokenStream[InputPointer].token_type == Token_Class.Idenifier))
+                {
+                    Parameter.Children.Add(match(Token_Class.Idenifier));
+                    return Parameter;
+                }
+                if (InputPointer <= TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.Constant) 
+                {
+
+                 Parameter.Children.Add(match(Token_Class.Constant));
+                  return Parameter;
+                 }
+
+                Errors.Parser_Error_List.Add("Missing variable name in Parameter Declaration");
+                return null;
+            
+
+
+        }
+
+        private Node ParamsDashcall()
+        {
+            Node paramsdash = new Node("Parameters'");
+
+
+            Console.WriteLine(TokenStream[InputPointer].token_type);
+            if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.Comma)
+                paramsdash.Children.Add(Comma());
+
+            if (InputPointer != TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.Idenifier || TokenStream[InputPointer].token_type == Token_Class.Constant)
+            {
+                paramsdash.Children.Add(Paramcall());
+                paramsdash.Children.Add(ParamsDashcall());
+                return paramsdash;
+            }
+
+
+            return null;
+
+        }
+
+
         private Node FuncCall()
         {
             Node funcall = new Node("Function Call");
@@ -854,12 +963,14 @@ namespace JASON_Compiler
                 funcall.Children.Add(match(Token_Class.Idenifier));
 
             funcall.Children.Add(L_parenthesis());
-            funcall.Children.Add(Params());
+            funcall.Children.Add(Paramscall());
             funcall.Children.Add(R_parenthesis());
-            funcall.Children.Add(semicolon());
+           // funcall.Children.Add(semicolon());
 
             return funcall;
         }
+
+
 
         private Node semicolon()
         {
