@@ -141,6 +141,7 @@ namespace JASON_Compiler
             Function_Header.Children.Add(L_parenthesis());
             Console.WriteLine("i failed here 3");
 
+        if(TokenStream[InputPointer].token_type !=Token_Class.RParanthesis)
             Function_Header.Children.Add(Params());
             Console.WriteLine("i failed here 4");
 
@@ -333,8 +334,9 @@ namespace JASON_Compiler
                 Console.WriteLine("in body");
                 funcBody.Children.Add(match(Token_Class.LCurly));
                 Node statementsNode = Statements();
-                if (statementsNode != null)
-                {
+                //if (statementsNode != null)
+               // may be there is no statemnt so cheking it is wrong 
+                //{
 
                     Console.WriteLine("in statement");
                     funcBody.Children.Add(statementsNode);
@@ -350,8 +352,8 @@ namespace JASON_Compiler
                     funcBody.Children.Add(eps);
                     funcBody.Children.Add(match(Token_Class.RCurly));
                     return funcBody;
-                }
-                Errors.Parser_Error_List.Add("Invalid Statements");
+                //}
+                //Errors.Parser_Error_List.Add("Invalid Statements");
                 return null;
             }
             Errors.Parser_Error_List.Add("Missing function body");
@@ -398,7 +400,7 @@ namespace JASON_Compiler
                 Errors.Parser_Error_List.Add("Invalid Statement Dash");
                 return null;
             }
-            Errors.Parser_Error_List.Add("Invalid Statement");
+            Errors.Parser_Error_List.Add("Invalid Statement or no statments found ");
             return null;
         }
         private Node Statement()
@@ -478,7 +480,8 @@ namespace JASON_Compiler
             }
             else
             {
-                Errors.Parser_Error_List.Add("Invalid or Unrecognized Statement");
+                // should edit t to check if return then no errors should be printed
+                Errors.Parser_Error_List.Add("Invalid or Unrecognized Statement or not statments found ");
                 return null;
             }
 
