@@ -59,9 +59,11 @@ namespace JASON_Compiler
             textBox1.Text = "";
             textBox2.Text = "";
             JASON_Compiler.TokenStream.Clear();
+            JASON_Compiler.Jason_Scanner.Tokens.Clear();
             dataGridView1.Rows.Clear();
             treeView1.Nodes.Clear();
             Errors.Error_List.Clear();
+            Errors.Parser_Error_List.Clear();
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)

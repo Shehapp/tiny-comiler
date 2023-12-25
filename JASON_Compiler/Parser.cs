@@ -419,7 +419,8 @@ namespace JASON_Compiler
             {
                 Errors.Parser_Error_List.Add("Invalid Statement or no statments found ");
             }
-            return null;
+            // edited was null 
+            return statementNode;
         }
         private Node Statement()
         {
@@ -615,6 +616,8 @@ namespace JASON_Compiler
             if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.Idenifier)
             {
                 ids_.Children.Add(match(Token_Class.Idenifier));
+
+                // if int a,b,c:5  
                 ids_.Children.Add(IdListDash());
                 return ids_;
             }
@@ -992,9 +995,9 @@ namespace JASON_Compiler
             ifStatement.Children.Add(match(Token_Class.Then));
 
             Node statementTemp = Statements();
-
-            if (statementTemp != null)
-            {
+// we could have if statment without statments inside it so checiking it will be useless
+//            if (statementTemp != null)
+//            {
                 ifStatement.Children.Add(statementTemp);
                 if (TokenStream[InputPointer].token_type == Token_Class.Else)
                 {
@@ -1011,12 +1014,12 @@ namespace JASON_Compiler
                     ifStatement.Children.Add(match(Token_Class.End));
                     return ifStatement;
                 }
-                Errors.Parser_Error_List.Add("Invalid If statement");
-                return null;
-            }
+                Errors.Parser_Error_List.Add("invalid if statement missing END ");
+                return ifStatement;
+//            }
 
-            Errors.Parser_Error_List.Add("Invalid If statement");
-            return null;
+//            Errors.Parser_Error_List.Add("Invalid If statement");
+//            return ifStatement;
         }
 
         private Node CondStmt()
