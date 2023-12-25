@@ -415,10 +415,13 @@ namespace JASON_Compiler
                 Errors.Parser_Error_List.Add("Invalid Statement Dash");
                 return null;
             }
-            if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type != Token_Class.T_return)
+
+
+            // we do not need to check if it is a wrong statment as Statement() does it ;
+            /*           if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type != Token_Class.T_return)
             {
                 Errors.Parser_Error_List.Add("Invalid Statement or no statments found ");
-            }
+            }*/
             // edited was null 
             return statementNode;
         }
@@ -499,10 +502,16 @@ namespace JASON_Compiler
             }
             else
             {
-                // should edit t to check if return then no errors should be printed
+                // should edit  to check if return then no errors should be printed
+                // the question here when there should be no statments anymore (return ,else , else if ,end)
 
-                if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type != Token_Class.T_return)
+                Console.WriteLine(TokenStream[InputPointer].token_type);
+                if (InputPointer < TokenStream.Count && (TokenStream[InputPointer].token_type != Token_Class.T_return &&
+                    TokenStream[InputPointer].token_type != Token_Class.Else && TokenStream[InputPointer].token_type != Token_Class.ELSEIF
+                    && TokenStream[InputPointer].token_type != Token_Class.Until && TokenStream[InputPointer].token_type != Token_Class.End))
+                {
                     Errors.Parser_Error_List.Add("Invalid or Unrecognized Statement or not statments found ");
+                }
                 return null;
             }
 
