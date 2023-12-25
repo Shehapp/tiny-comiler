@@ -586,7 +586,8 @@ namespace JASON_Compiler
             Node declaration = new Node("Declaration Statement");
             declaration.Children.Add(Datatype());
             declaration.Children.Add(IdList());
-            declaration.Children.Add(AssignR());
+// we donot need it as we already checked if there is assigment in IdList()
+ //           declaration.Children.Add(AssignR());
             declaration.Children.Add(semicolon());
 
             return declaration;
@@ -598,6 +599,13 @@ namespace JASON_Compiler
             if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.Idenifier)
             {
                 ids.Children.Add(match(Token_Class.Idenifier));
+
+                // if int a:=5,b,  if there is equal after the ID
+                if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.AssignOp)
+                {
+                    ids.Children.Add(AssignR());
+                }
+
                 ids.Children.Add(IdListDash());
                 return ids;
             }
@@ -617,8 +625,12 @@ namespace JASON_Compiler
             {
                 ids_.Children.Add(match(Token_Class.Idenifier));
 
-                // if int a,b,c:5  
-                ids_.Children.Add(IdListDash());
+                // if int a,b,c:=5  if there is equal after the ID
+                if (InputPointer < TokenStream.Count && TokenStream[InputPointer].token_type == Token_Class.AssignOp)
+                {
+                    ids_.Children.Add(AssignR());
+                }
+                    ids_.Children.Add(IdListDash());
                 return ids_;
             }
             Errors.Parser_Error_List.Add("Missing Identifier");
@@ -1209,7 +1221,7 @@ namespace JASON_Compiler
                         + ExpectedToken.ToString() + " and " +
                         TokenStream[InputPointer].token_type.ToString() +
                         "  found\r\n");
-                    InputPointer++;
+                  //  InputPointer++;
                     return null;
                 }
             }
@@ -1217,7 +1229,7 @@ namespace JASON_Compiler
             {
                 Errors.Error_List.Add("Parsing Error: Expected "
                         + ExpectedToken.ToString()  + "\r\n");
-                InputPointer++;
+                //InputPointer++;
                 return null;
             }
         }
