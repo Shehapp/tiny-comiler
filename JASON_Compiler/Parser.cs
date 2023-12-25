@@ -1250,7 +1250,7 @@ namespace JASON_Compiler
                 }
                 else
                 {
-                    Errors.Error_List.Add("Parsing Error: Expected "
+                    Errors.Parser_Error_List.Add("Parsing Error: Expected "
                         + ExpectedToken.ToString() + " and " +
                         TokenStream[InputPointer].token_type.ToString() +
                         "  found\r\n");
@@ -1260,7 +1260,7 @@ namespace JASON_Compiler
             }
             else
             {
-                Errors.Error_List.Add("Parsing Error: Expected "
+                Errors.Parser_Error_List.Add("Parsing Error: Expected "
                         + ExpectedToken.ToString()  + "\r\n");
               //  InputPointer++;
                 return null;
