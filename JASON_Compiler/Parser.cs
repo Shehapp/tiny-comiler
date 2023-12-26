@@ -882,7 +882,7 @@ namespace JASON_Compiler
                     return returnStatement;
                 }
             }
-
+//            FuncCall()
             Errors.Parser_Error_List.Add("Invalid Return Statement");
             return null;
         }
@@ -997,9 +997,9 @@ namespace JASON_Compiler
                 return paramsdash;
             }
 
-            InputPointer++;
+//            InputPointer++;
 
-            Errors.Parser_Error_List.Add("invalid parm call ");
+            //Errors.Parser_Error_List.Add("invalid parm call ");
             return null;
 
         }
