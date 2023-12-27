@@ -36,11 +36,19 @@ namespace JASON_Compiler
 
         void PrintErrors()
         {
-            for(int i=0; i<Errors.Error_List.Count; i++)
+            for (int i = 0; i < Errors.Error_List.Count; i++)
             {
-                textBox2.Text += Errors.Error_List[i];
+                textBox2.Text += Errors.Error_List[i] + "\r\n";
+            }
+
+            textBox3.Text += "\nParser Errors:\r\n";
+
+            for (int i = 0; i < Errors.Parser_Error_List.Count; i++)
+            {
+                textBox3.Text += Errors.Parser_Error_List[i] + "\r\n";
             }
         }
+
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -50,11 +58,19 @@ namespace JASON_Compiler
         {
             textBox1.Text = "";
             textBox2.Text = "";
+
+            textBox3.Text = "";
             JASON_Compiler.TokenStream.Clear();
+            JASON_Compiler.Jason_Scanner.Tokens.Clear();
             dataGridView1.Rows.Clear();
             treeView1.Nodes.Clear();
             Errors.Error_List.Clear();
+            Errors.Parser_Error_List.Clear();
         }
-        
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
